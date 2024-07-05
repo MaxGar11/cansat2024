@@ -1,0 +1,667 @@
+body {
+    background-image: url("https://w.wallhaven.cc/full/wq/wallhaven-wqvyxx.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .full-width-container {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .custom-navbar {
+    background-color: rgb(3, 10, 49);
+  }
+  
+  .custom-navbar .navbar-brand,
+  .custom-navbar .nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .custom-navbar .nav-link:hover,
+  .custom-navbar .nav-link:focus {
+    color: white !important;
+  }
+  
+  .custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  .custom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    gap: 2rem; /* Add gap between cards */
+}
+
+.card1 {
+    width: 220px; /* Width of the card */
+    height: 300px; /* Height of the card */
+    margin-top: 2rem;
+    background: #f5f5f5e5;
+    border-radius: 15px; /* Rounded corners */
+    padding: 1.5rem;
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card1-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.5rem;
+    align-items: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.card1-avatar {
+    width: 80px;
+    height: 80px;
+    background-image: url('img/Profes/rsz_carmen_santiago.jpg');
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+    margin-bottom: 1rem;
+}
+
+.card1-social {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: auto;
+    opacity: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    margin-left: -1rem;
+}
+
+.card1-social__item {
+    list-style: none;
+}
+
+.card1-social__item svg {
+    height: 18px;
+    width: 18px;
+    fill: #515F65;
+    cursor: pointer;
+    transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+.card1-title {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.card1-subtitle {
+    color: #859ba8;
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+}
+
+.card1:hover {
+    box-shadow: 0 8px 50px rgba(35, 35, 35, 0.2);
+}
+
+.card1:hover .card1-info {
+    transform: translateY(-5%);
+}
+
+.card1:hover .card1-social {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.card1-social__item svg:hover {
+    fill: #232323;
+    transform: scale(1.1);
+}
+
+.card1-avatar:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .card1 {
+        width: calc(50% - 20px); /* Dos tarjetas por fila */
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .card1 {
+        width: calc(100% - 20px); /* Una tarjeta por fila */
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.card2 {
+  width: 220px; /* Width of the card */
+  height: 300px; /* Height of the card */
+  margin-top: 2rem;
+  background: #f5f5f5e5;
+  border-radius: 15px; /* Rounded corners */
+  padding: 1.5rem;
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card2-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1.5rem;
+  align-items: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.card2-avatar {
+  width: 80px;
+  height: 80px;
+  background-image: url('img/Profes/rsz_gustavo_rubin.jpg');
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.card2-social {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: auto;
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  margin-left: -1rem;
+}
+
+.card2-social__item {
+  list-style: none;
+}
+
+.card2-social__item svg {
+  height: 18px;
+  width: 18px;
+  fill: #515F65;
+  cursor: pointer;
+  transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+.card2-title {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.card2-subtitle {
+  color: #859ba8;
+  font-size: 0.9em;
+  margin-bottom: 1rem;
+}
+
+.card2:hover {
+  box-shadow: 0 8px 50px rgba(35, 35, 35, 0.2);
+}
+
+.card2:hover .card2-info {
+  transform: translateY(-5%);
+}
+
+.card2:hover .card2-social {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.card2-social__item svg:hover {
+  fill: #232323;
+  transform: scale(1.1);
+}
+
+.card2-avatar:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .card2 {
+      width: calc(50% - 20px); /* Dos tarjetas por fila */
+      max-width: 300px;
+      height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .card2 {
+      width: calc(100% - 20px); /* Una tarjeta por fila */
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+.card3 {
+  width: 220px; /* Width of the card */
+  height: 300px; /* Height of the card */
+  margin-top: 2rem;
+  background: #f5f5f5e5;
+  border-radius: 15px; /* Rounded corners */
+  padding: 1.5rem;
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card3-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1.5rem;
+  align-items: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.card3-avatar {
+  width: 80px;
+  height: 80px;
+  background-image: url('img/Profes/rsz_claudia_zenteno.jpg');
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.card3-social {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: auto;
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  margin-left: -1rem;
+}
+
+.card3-social__item {
+  list-style: none;
+}
+
+.card3-social__item svg {
+  height: 18px;
+  width: 18px;
+  fill: #515F65;
+  cursor: pointer;
+  transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+.card3-title {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.card3-subtitle {
+  color: #859ba8;
+  font-size: 0.9em;
+  margin-bottom: 1rem;
+}
+
+.card3:hover {
+  box-shadow: 0 8px 50px rgba(35, 35, 35, 0.2);
+}
+
+.card3:hover .card3-info {
+  transform: translateY(-5%);
+}
+
+.card3:hover .card3-social {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.card3-social__item svg:hover {
+  fill: #232323;
+  transform: scale(1.1);
+}
+
+.card3-avatar:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .card3 {
+      width: calc(50% - 20px); /* Dos tarjetas por fila */
+      max-width: 300px;
+      height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .card3 {
+      width: calc(100% - 20px); /* Una tarjeta por fila */
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+
+.card4 {
+  width: 220px; /* Width of the card */
+  height: 300px; /* Height of the card */
+  margin-top: 2rem;
+  background: #f5f5f5e5;
+  border-radius: 15px; /* Rounded corners */
+  padding: 1.5rem;
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card4-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1.5rem;
+  align-items: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.card4-avatar {
+  width: 80px;
+  height: 80px;
+  background-image: url('img/Profes/rsz_rsz_charly.jpg');
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.card4-social {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: auto;
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  margin-left: -1rem;
+}
+
+.card4-social__item {
+  list-style: none;
+}
+
+.card4-social__item svg {
+  height: 18px;
+  width: 18px;
+  fill: #515F65;
+  cursor: pointer;
+  transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+.card4-title {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.card4-subtitle {
+  color: #859ba8;
+  font-size: 0.9em;
+  margin-bottom: 1rem;
+}
+
+.card4:hover {
+  box-shadow: 0 8px 50px rgba(35, 35, 35, 0.2);
+}
+
+.card4:hover .card4-info {
+  transform: translateY(-5%);
+}
+
+.card4:hover .card4-social {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.card4-social__item svg:hover {
+  fill: #232323;
+  transform: scale(1.1);
+}
+
+.card4-avatar:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .card4 {
+      width: calc(50% - 20px); /* Dos tarjetas por fila */
+      max-width: 300px;
+      height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .card4 {
+      width: calc(100% - 20px); /* Una tarjeta por fila */
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+.card5 {
+  width: 220px; /* Width of the card */
+  height: 300px; /* Height of the card */
+  margin-top: 2rem;
+  background: #f5f5f5e5;
+  border-radius: 15px; /* Rounded corners */
+  padding: 1.5rem;
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card5-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1.5rem;
+  align-items: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.card5-avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(to top, #438b67 0%, #6a9680 100%);
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.card5-social {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: auto;
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  margin-left: -1rem;
+}
+
+.card5-social__item {
+  list-style: none;
+}
+
+.card5-social__item svg {
+  height: 18px;
+  width: 18px;
+  fill: #515F65;
+  cursor: pointer;
+  transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+.card5-title {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.card5-subtitle {
+  color: #859ba8;
+  font-size: 0.9em;
+  margin-bottom: 1rem;
+}
+
+.card5:hover {
+  box-shadow: 0 8px 50px rgba(35, 35, 35, 0.2);
+}
+
+.card5:hover .card5-info {
+  transform: translateY(-5%);
+}
+
+.card5:hover .card5-social {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.card5-social__item svg:hover {
+  fill: #232323;
+  transform: scale(1.1);
+}
+
+.card5-avatar:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .card5 {
+      width: calc(50% - 20px); /* Dos tarjetas por fila */
+      max-width: 300px;
+      height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .card5 {
+      width: calc(100% - 20px); /* Una tarjeta por fila */
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+
+footer {
+  background-color: rgb(0, 62, 104);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-content ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-content ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+<!-- IMPLEMENTACION COLOR -- >
+
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.button {
+  --border-right: 4px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #03b3f8;
+  --fs-size: 1em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+  top: 8px; /* Ajusta este valor según sea necesario */
+  left: 9px; /* Ajusta este valor según sea necesario */
+}
+
+@media (max-width: 992px){
+  .hover-text{
+    left: 1.5px;
+  }
+}
+
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
